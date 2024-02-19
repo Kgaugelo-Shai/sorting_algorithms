@@ -1,21 +1,23 @@
 0x1B. C - Sorting algorithms & Big O
 
-Authors:
+AUTHORS:
 Kgaugelo Shai - shaikgaugelo003@gmail.com
 Vuyisile Lehola - vtlehola23@gmail.com
 
-=====================================================================================
+==============================================================================
 Learning Objectives:
 General
 At least four different sorting algorithms
-What is the Big O notation, and how to evaluate the time complexity of an algorithm
+What is the Big O notation, and how to evaluate the time complexity of an
+algorithm
 How to select the best sorting algorithm for a given input
 What is a stable sorting algorithm
 
-=====================================================================================
+==============================================================================
 More Info
 Data Structure and Functions
-For this project you are given the following print_array, and print_list functions:
+For this project you are given the following print_array, and print_list
+functions:
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -41,7 +43,7 @@ void print_array(const int *array, size_t size)
     printf("\n");
 }
 
-=====================================================================================
+==============================================================================
 #include <stdio.h>
 #include "sort.h"
 
@@ -65,10 +67,13 @@ void print_list(const listint_t *list)
     }
     printf("\n");
 }
-=====================================================================================
-Our files print_array.c and print_list.c (containing the print_array and print_list functions)
+
+==============================================================================
+Our files print_array.c and print_list.c (containing the print_array and
+print_list functions)
 will be compiled with your functions during the correction.
-Please declare the prototype of the functions print_array and print_list in your sort.h header file
+Please declare the prototype of the functions print_array and print_list in
+your sort.h header file
 Please use the following data structure for doubly linked list:
 /**
  * struct listint_s - Doubly linked list node
@@ -93,10 +98,13 @@ log(n) -> O(log(n))
 n * log(n) -> O(nlog(n))
 n + k -> O(n+k)
 …
-Please use the “short” notation (don’t use constants). Example: O(nk) or O(wn) should be written O(n).
-If an answer is required within a file, all your answers files must have a newline at the end.
+Please use the “short” notation (don’t use constants). Example: O(nk) or
+O(wn) should be written O(n).
+If an answer is required within a file, all your answers files must have
+a newline at the end.
 
-====================================================================================
+==============================================================================
+
 TASKS:
 0. Bubble sort
 
@@ -113,7 +121,7 @@ complexity of the Bubble sort algorithm, with 1 notation per line:
 - in the average case
 - in the worst case
 
-====================================================================================
+==============================================================================
 1. Insertion sort
 
 Write a function that sorts a doubly linked list of
@@ -131,7 +139,7 @@ complexity of the Insertion sort algorithm, with 1 notation per line:
 - in the average case
 - in the worst case
 
-=====================================================================================
+==============================================================================
 2. Selection sort
 
 Write a function that sorts an array of integers in
@@ -147,7 +155,7 @@ complexity of the Selection sort algorithm, with 1 notation per line:
 - in the average case
 - in the worst case
 
-=====================================================================================
+==============================================================================
 3. Quick sort
 
 Write a function that sorts an array of integers in
