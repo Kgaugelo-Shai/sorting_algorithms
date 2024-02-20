@@ -7,17 +7,24 @@
  * Return: Nothing
  * Description: This function sorts an array of integers in ascending order
  */
+
 void shell_sort(int *array, size_t size)
 {
-	unsigned int i, j, k, temp;
-	int gap = 1
-			, temp_gap = 0;
+	int gap = 1, i, j, tmp;
 
-	while (gap < size / 3)
-		gap = gap * 3 + 1;
-
-	while (gap > 0)
+	while (gap < ((int)(size)))
+		gap = (3 * gap) + 1;
+	for (gap = (gap - 1) / 3; gap > 0; gap = (gap - 1) / 3)
 	{
+		for (i = gap; i < (int)size; i += 1)
+		{
+			tmp = array[i];
 
+			for (j = i; j >= gap && array[j - gap] > tmp; j -= gap)
+				array[j] = array[j - gap];
+
+			array[j] = tmp;
+		}
+		print_array(array, size);
 	}
 }
