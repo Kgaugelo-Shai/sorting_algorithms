@@ -1,4 +1,5 @@
 #include "sort.h"
+
 /**
  * getSize - returns the size of the list
  * @list: list to analyze
@@ -22,19 +23,6 @@ int getSize(listint_t **list)
  * using
  * the sort insertion algotithm
  * @list: pointer to the head of the list
- */
-
-/*
- * get length of list and check if list is empty and check length of list
- * if list is not empty, traverse the list
- * if list is empty, return
- * if list has only one node, return
- * the outter loop must start from the second node
- * the inner loop must start from the first node and traverse the list in
- * reverse store the current node in a temp variable if the current node is
- * greater than the previous node, swap the nodes and decrease the count if the
- * current node is less than the previous node, store the temp variable in the
- * current node and increase the count
  */
 
 void insertion_sort_list(listint_t **list)
