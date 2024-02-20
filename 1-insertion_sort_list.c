@@ -42,7 +42,7 @@ void insertion_sort_list(listint_t **list)
 	int length = getSize(list);
 	listint_t *outter;
 
-	if (list == NULL || length < 2)
+	if (list == NULL || length < 2 || *list == NULL || (*list)->next == NULL)
 		return;
 
 	outter = (*list)->next;
