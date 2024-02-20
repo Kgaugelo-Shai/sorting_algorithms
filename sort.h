@@ -33,6 +33,7 @@ void merge_sort(int *array, size_t size);
 void sift_down(int *array, size_t size, size_t index, size_t nth);
 void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
+void bitonic_sort(int *array, size_t size);
 
 /* These are for testing purposes */
 int partition_sort(int *array, size_t size, int left, int right);
