@@ -20,7 +20,8 @@ void subarray_merge(int *sub_array, int *holder, size_t up_bound, size_t mid,
 	print_array(sub_array + mid, low_bound - mid);
 
 	for (idx = up_bound, j = mid; idx < mid && j < low_bound; key++)
-		holder[key] = (sub_array[idx] < sub_array[j]) ? sub_array[idx++] : sub_array[j++];
+		holder[key] = (sub_array[idx] < sub_array[j])
+			? sub_array[idx++] : sub_array[j++];
 	for (; idx < mid; idx++)
 		holder[key++] = sub_array[idx];
 	for (; j < low_bound; j++)
@@ -39,7 +40,8 @@ void subarray_merge(int *sub_array, int *holder, size_t up_bound, size_t mid,
  * @up_bound: The upper bound index of the subarray.
  * @low_bound: The lower bound index of the subarray.
  */
-void merge_sort_recursion(int *sub_array, int *holder, size_t up_bound, size_t low_bound)
+void merge_sort_recursion(int *sub_array, int *holder, size_t up_bound,
+			  size_t low_bound)
 {
 	size_t mid;
 
